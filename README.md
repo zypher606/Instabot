@@ -2,11 +2,7 @@
 InstaBot v 1.0.1
 
 Works without the new Instagram [api][1](the new review process)
-Username and password stored local. Written in Python
-
-<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=7BMM6JGE73322&lc=US&item_name=GitHub%20donation&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted" title="Support project"><img src="https://img.shields.io/badge/Support%20project-paypal-brightgreen.svg"></a>
-<a href="https://github.com/LevPasha/Instagram-bot-cs" title="Instagram C# bot"><img src="https://img.shields.io/badge/C%23%20InstaBot-v1.0-blue.svg"></a>
-<a href="https://github.com/LevPasha/Instagram-API-python" title="python Instagram API"><img src="https://img.shields.io/badge/python%20InstaAPI-v%20b0.0.1-orange.svg"></a>
+Username and password will be prompted. Written in Python
 
 ## Requirements
 `Python2.7` minimum
@@ -15,7 +11,7 @@ A working Instagram account
 
 ## Usage
 #### Example of usage:
-For example see `example.py`. Just change the login and password information with your own, then run `example.py` and the bot will start doing it's magic!
+For example see `botstart.py`. Just change the login and password information with your own, then run `botstart.py` and the bot will start doing it's magic!
 
 ####1) Login:
 Login automatic, as followed, by creating the `InstaBot` class element:
@@ -166,9 +162,9 @@ bot.like_all_exist_media(4)
 
 3) Download ZIP and extract
 
-4) Modify example.py to your pleasing
+4) Modify botstart.py to your pleasing
 
-5) Run program `python3 example.py` or `python example.py` on Mac, Linux or Windows
+5) Run program `python3 botstart.py` or `python botstart.py` on Mac, Linux or Windows
 
 ## Tested on:
 Windows - Python 3.4 & Python 2.7.11
@@ -179,39 +175,5 @@ Ubuntu 15.10 wily - Python 3.4.3+ & 2.7.10
 ## Warning!
 The End-User assumes sole responsibility for anything resulting from the use or modification this program.
 
-## Work with [InstagramAPI.py][4]
-I rewrote, created by @mgp25 php class, to work with the instagram API. This class give ALL access to instagram (login, post photo/video, comment, follow, get followers and etc.). This class pretends device on android and can work like android APP. In future I will rewrite all this bot to InstagramAPI.py.
 
-This class not ready for 100%, but I make most important things and you can work with it.
-
-## Work with userinfo.py (does not work after June 1 2016)
-If you want to get some user info (follower, following and etc.) Instagram don't give this info.
-Class in `userinfo.py` aggregate this information, from other sites (now only from http://ink361.com/)
-#### How to use:
-```python
-ui = UserInfo()
-```
-Search by `user_name` (need to get `user_id`, `user_name` if you don't know it):
-```python
-ui.search_user(user_name="danbilzerian")
-```
-or if you know `user_id` use `ui.search_user(user_id="50417061")`. Your result:
-```python
-print(ui.user_name)
-print(ui.user_id)
-```
-Get following list with no limit
-```python
-ui.get_following()
-print(ui.following)
-```
-Get followers list with limit 10:
-```python
-ui.get_followers(limit=10)
-print(ui.followers)
-```
-
-[1]: http://developers.instagram.com/post/133424514006/instagram-platform-update
-[2]: https://www.instagram.com
-[3]: https://www.python.org/dev/peps/pep-0008/#source-file-encoding
-[4]: https://github.com/LevPasha/Instagram-API-python
+[1]: https://github.com/zypher606/Instabot
